@@ -1,7 +1,7 @@
 from django.db import models
 
 class Pessoa(models.Model):
-    id_pessoa = models.AutoField(primary_key=True)
+    id_pessoa = models.AutoField(auto_created=True,primary_key=True)
     nome = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     cep = models.CharField(max_length=8)
