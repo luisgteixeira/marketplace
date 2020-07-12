@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: gunicorn marketplace.wsgi --log-file -
