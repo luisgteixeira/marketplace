@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Pessoa',
             fields=[
-                ('id_pessoa', models.UUIDField(primary_key=True, serialize=False)),
+                ('id_pessoa', models.AutoField(primary_key=True, serialize=False)),
                 ('nome', models.CharField(max_length=100)),
                 ('email', models.CharField(max_length=100)),
                 ('cep', models.CharField(max_length=8)),

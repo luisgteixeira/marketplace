@@ -93,8 +93,12 @@ WSGI_APPLICATION = 'marketplace.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbi03fem0ejs0v',
+        'USER': 'flsyjatrbapwid',
+        'PASSWORD': 'ecf04f45139855b2c04672a96c90f19edb36b11c579e34d6c91a1cd705ffb7c5',
+        'HOST': 'ec2-35-174-127-63.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
