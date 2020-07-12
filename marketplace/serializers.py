@@ -6,4 +6,3 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Pessoa
         fields = ['id_pessoa', 'nome', 'email', 'cep', 'telefone']
-        #fields = ['nome', 'email', 'cep', 'telefone']
